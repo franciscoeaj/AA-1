@@ -1,2 +1,4 @@
 This_is_a_[Beiju]_text
 [[]][]Happy_Birthday_Tsinghua_University
+abc[de]f[gh
+[pikachu][rsrsrs][romildo][batata]
