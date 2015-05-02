@@ -14,9 +14,12 @@ while True:
 	for i in xrange(consultas):
 		ocorrencia, elemento = map(int, raw_input().split())
 
-		if len(dicionario[elemento]) < ocorrencia:
+		if dicionario.has_key(elemento):
+			if len(dicionario[elemento]) < ocorrencia:
+				resultado = 0
+			else: 
+				resultado = dicionario[elemento][ocorrencia - 1] + 1
+		else:
 			resultado = 0
-		else: 
-			resultado = dicionario[elemento][ocorrencia - 1] + 1
 
 		print resultado
